@@ -1,0 +1,136 @@
+/* first experience with CSS */
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2rem;
+  background-color: #8bdf83;
+  font-family: "Nunito", sans-serif;
+  display: grid;
+  justify-items: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-items: center;
+}
+
+.center {
+  max-width: 31rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 1.4rem;
+  justify-self: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #fefffe;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product {
+  background-color: #3f6660;
+  padding: 1.8rem;
+  border-radius: 1rem;
+}
+
+.description {
+  color: #fefffe;
+}
+
+.logo {
+  grid-row: 1;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: #fefffe;
+  border: solid 0.1rem;
+  padding: 0.1rem 5rem;
+  border-radius: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+nav {
+  align-self: center;
+  max-width: 12rem;
+  padding-right: 1.8rem;
+  grid-row: 1;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.single-product {
+  display: grid;
+  justify-items: center;
+  margin: 0 6vw;
+}
+.form {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  margin: 0.7rem 0;
+  display: inline-block;
+  border: 0.2rem solid #3f6660;
+  border-radius: 0.1rem;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 1.1rem;
+  color: #fefffe;
+  background-color: #3f6660;
+  border: solid #fefffe 0.1rem;
+  padding: 0.5rem 5rem;
+  margin: 1, 8;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.product-image {
+  max-width: 30rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-color: #3f6660;
+  border-width: 0.5rem;
+  border-radius: 0.2rem;
+  display: grid;
+  column-gap: 3rem;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  .single-product {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+  }
+  .product-image {
+    max-width: 18rem;
+  }
+}
+@media only screen and (max-width: 60rem) {
+  .nav {
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+  }
+}
