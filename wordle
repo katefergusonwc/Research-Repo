@@ -1,5 +1,7 @@
 // Wordle took the world by storm, and when I found out that it was just a game a man made for his wife, it inspired me.
 
+// I still don't understand any of this whatsoever, but it's interesting \\
+
 !(function (d) {
   function x() {
     var f, a;

@@ -1,4 +1,6 @@
-// Pagination is a great feature.
+// Pagination is a great feature, and was one of the first parts of javascript that I came across.
+// I still struggle a lot with javascript, but I find reading code like the one below helps to get
+// used to it a bit more.
 
 <nav
   aria-label="pagination navigation"
